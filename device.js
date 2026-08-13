@@ -31,6 +31,17 @@
                                 defaultValue: '1 + 1'
                             }
                         }
+                    },
+                    {
+                        opcode: 'repoeval',
+                        blockType: Scratch.BlockType.BOOLEAN,
+                        text: 'eval [code]',
+                        arguments: {
+                            code: {
+                                type: Scratch.ArgumentType.STRING,
+                                defaultValue: '1 + 1'
+                            }
+                        }
                     }
                 ]
             };
@@ -60,6 +71,20 @@
                 return result;
             } catch (e) {
                 return "Error: " + e.message;
+            }
+        }
+        booleval(args) {
+            try {
+                const fn = new Function(args.code);
+                let result = fn();
+                if (result === undefined) {
+                    const fnWithReturn = new Function(`return ${args.code};`);
+                    result = fnWithReturn();
+                }
+                // 返ってきた結果を強制的にBooleanに変換する
+                return Boolean(result); // または !!result
+            } catch (e) {
+                return false; // エラーのときはとりあえず false にしておくなど
             }
         }
     }
