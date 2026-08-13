@@ -28,7 +28,7 @@
                         arguments: {
                             code: {
                                 type: Scratch.ArgumentType.STRING,
-                                defaultValue: '1 + 1'
+                                defaultValue: '1 == 1'
                             }
                         }
                     },
