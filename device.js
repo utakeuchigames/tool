@@ -17,7 +17,7 @@
                         args: [
                             {
                                 type: Scratch.ArgumentType.STRING,
-                                defaultValue: 'console.log("hello");'
+                                //defaultValue: 'console.log("hello");'
                             }
                         ]
                     },
@@ -28,7 +28,7 @@
                         args: [
                             {
                                 type: Scratch.ArgumentType.STRING,
-                                defaultValue: '1 + 1'
+                                //defaultValue: '1 + 1'
                             }
                         ]
                     }
