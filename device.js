@@ -17,21 +17,21 @@
                         opcode: 'exeeval',
                         blockType: Scratch.BlockType.COMMAND,
                         text: 'eval[code]',
-                        args: [
+                        args: {
                             code: {
                                 type: Scratch.ArgType.STRING
                             }
-                        ]
+                        }
                     },
                     {
                         opcode: 'repoeval',
                         blockType: Scratch.BlockType.REPORTER,
                         text: 'eval[code]',
-                        args: [
+                        args: {
                             code: {
                                 type: Scratch.ArgType.STRiNG
                             }
-                        ]
+                        }
                     },
                 ]
             };
