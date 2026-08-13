@@ -33,7 +33,7 @@
                         }
                     },
                     {
-                        opcode: 'repoeval',
+                        opcode: 'booleval',
                         blockType: Scratch.BlockType.BOOLEAN,
                         text: 'eval [code]',
                         arguments: {
