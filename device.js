@@ -40,24 +40,17 @@
         dis() {
             return window.matchMedia("(orientation: landscape)").matches;
         }
-        // レポーターとして値を出力させたい場合
+        // コマンドブロック用（値を返さなくていい）
         exeeval(args) {
             const code = args.code;
             try {
-                // まずはそのまま Function で試す
                 const fn = new Function(code);
-                const result = fn();
-                // もし return がなくて undefined になった場合は、"return " を補ってもう一度試す
-                if (result === undefined) {
-                    const fnWithReturn = new Function(`return ${code};`);
-                    //return fnWithReturn();
-                }
-                //return result;
+                fn();
             } catch (e) {
-                return "Error: " + e.message;
+                console.error("Eval Error: " + e.message);
             }
-        }
-        // レポーターとして値を出力させたい場合
+        },
+        // レポーターブロック用（値を返す）
         repoeval(args) {
             const code = args.code;
             try {
