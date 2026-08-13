@@ -15,9 +15,9 @@
                         blockType: Scratch.BlockType.COMMAND,
                         text: 'eval [code]',
                         args: [
-                            {
+                            code: {
                                 type: Scratch.ArgumentType.STRING,
-                                //defaultValue: 'console.log("hello");'
+                                defaultValue: 'console.log("hello");'
                             }
                         ]
                     },
@@ -26,9 +26,9 @@
                         blockType: Scratch.BlockType.REPORTER,
                         text: 'eval [code]',
                         args: [
-                            {
+                            code: {
                                 type: Scratch.ArgumentType.STRING,
-                                //defaultValue: '1 + 1'
+                                defaultValue: '1 + 1'
                             }
                         ]
                     }
