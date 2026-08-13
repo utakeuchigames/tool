@@ -19,7 +19,7 @@
                         text: 'eval[code]',
                         args: [
                             code: {
-                                type: Scratch.ArgType.TEXT
+                                type: Scratch.ArgType.STRING
                             }
                         ]
                     },
@@ -29,7 +29,7 @@
                         text: 'eval[code]',
                         args: [
                             code: {
-                                type: Scratch.ArgType.TEXT
+                                type: Scratch.ArgType.STRiNG
                             }
                         ]
                     },
