@@ -14,7 +14,7 @@
                         opcode: 'exeeval',
                         blockType: Scratch.BlockType.COMMAND,
                         text: 'eval [code]',
-                        args: {
+                        arguments: {
                             code: {
                                 type: Scratch.ArgumentType.STRING,
                                 defaultValue: 'console.log("hello");'
@@ -25,7 +25,7 @@
                         opcode: 'repoeval',
                         blockType: Scratch.BlockType.REPORTER,
                         text: 'eval [code]',
-                        args: {
+                        arguments: {
                             code: {
                                 type: Scratch.ArgumentType.STRING,
                                 defaultValue: '1 + 1'
