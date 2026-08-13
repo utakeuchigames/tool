@@ -16,7 +16,7 @@
                         text: 'eval [code]',
                         args: [
                             {
-                                type: Scratch.ArgType.STRING,
+                                type: Scratch.ArgumentType.STRING,
                                 defaultValue: 'console.log("hello");'
                             }
                         ]
@@ -27,7 +27,7 @@
                         text: 'eval [code]',
                         args: [
                             {
-                                type: Scratch.ArgType.STRING,
+                                type: Scratch.ArgumentType.STRING,
                                 defaultValue: '1 + 1'
                             }
                         ]
