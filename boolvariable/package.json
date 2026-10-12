@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "prettier": "^3.9.10"
+  },
+  "scripts": {
+    "prettier": "prettier --write \"**/**.js\""
   }
 }
